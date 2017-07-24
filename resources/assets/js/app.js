@@ -7,7 +7,10 @@
 
 require('./bootstrap');
 
+window.$ = window.jQuery = require('jquery');
+require('wowjs');
 window.Vue = require('vue');
+require('jquery.scrollto');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -15,8 +18,142 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
+// Vue.component('example', require('./components/Example.vue'));
+//
+// const app = new Vue({
+//     el: '#app'
+// });
 
-const app = new Vue({
-    el: '#app'
+
+$(document).ready(function(){
+    var wow = new WOW(
+        {
+            boxClass:     'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset:       0,          // distance to the element when triggering the animation (default is 0)
+            mobile:       true,       // trigger animations on mobile devices (default is true)
+            live:         true,       // act on asynchronously loaded content (default is true)
+            callback:     function(box) {
+                // the callback is fired every time an animation is started
+                // the argument that is passed in is the DOM node being animated
+            },
+            scrollContainer: null // optional scroll container selector, otherwise use window
+        }
+    );
+    wow.init();
+
+    console.log(wow);
+    $('.parallax').parallax();
+    // $('#fullpage').fullpage();
+
+    $('.menu-btn').sideNav({
+            menuWidth: 300, // Default is 300
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true // Choose whether you can drag to open on touch screens
+        }
+    );
+
+    // Get the form
+    var form = $('#ajax-contact');
+
+    //  Get the message
+    var formMessages = $('#form-messages')
+
+    // $(form).submit(function(event) {
+    //   //Stop the browser from submitting the form
+    //   event.preventDefault();
+    //
+    //   var formData = $(form).serialize();
+    //
+    //   var fullName = $('#full_name').val();
+    //   var email = $('#email').val();
+    //   var subject = $('#subject').val();
+    //   var message = $('#message').val();
+    //
+    //
+    //   console.log(fullName);
+    //   console.log(email);
+    //   console.log(subject);
+    //   console.log(message);
+    //
+    //
+    //   $.ajax({
+    //       type: 'POST',
+    //       url: $(form).attr('action'),
+    //       data: "name=" + fullName + "&email=" + email + "&message=" + message
+    //   })
+    //   // .done(function(response) {
+    //   //   console.log("Success");
+    //   //     // Make sure that the formMessages div has the 'success' class.
+    //   //     $(formMessages).removeClass('error');
+    //   //     $(formMessages).addClass('success');
+    //   //
+    //   //     // Set the message text.
+    //   //     $(formMessages).text(response);
+    //   //
+    //   //     // Clear the form.
+    //   //     $('#name').val('');
+    //   //     $('#email').val('');
+    //   //     $('#message').val('');
+    //   // })
+    //   // .fail(function(data) {
+    //   //   console.log("Failed");
+    //   //     // Make sure that the formMessages div has the 'error' class.
+    //   //     $(formMessages).removeClass('success');
+    //   //     $(formMessages).addClass('error');
+    //   //
+    //   //     // Set the message text.
+    //   //     if (data.responseText !== '') {
+    //   //         $(formMessages).text(data.responseText);
+    //   //     } else {
+    //   //         $(formMessages).text('Oops! An error occured and your message could not be sent.');
+    //   //     }
+    //   // });
+    //
+    //
+    //   console.log("Submitted");
+    // });
+
+    $('#service-btn').click(function() {
+        $('#services').animatescroll({scrollSpeed:3000,easing:'easeInOutSine'});
+    });
+    $('#skills-btn').click(function() {
+        $('#skills').animatescroll({scrollSpeed:3000,easing:'easeInOutSine'});
+    });
+    $('#pricing-btn').click(function() {
+        $('#pricing').animatescroll({scrollSpeed:3000,easing:'easeInOutSine'});
+    });
+    $('#works-btn').click(function() {
+        $('#works').animatescroll({scrollSpeed:3000,easing:'easeInOutSine'});
+    });
+    $('#quote-btn').click(function() {
+        $('#quote').animatescroll({scrollSpeed:3000,easing:'easeInOutSine'});
+    });
+    $('#contact-btn').click(function() {
+        $('#contact').animatescroll({scrollSpeed:3000,easing:'easeInOutSine'});
+    });
+
+    jQuery(document).ready(function(){
+        jQuery('.skillbar').each(function(){
+            jQuery(this).find('.skillbar-bar').animate({
+                width:jQuery(this).attr('data-percent')
+            },4000);
+        });
+    });
+
+
+    var parallax = document.querySelectorAll(".parallax"),
+        speed = 0.4;
+
+    window.onscroll = function(){
+        [].slice.call(parallax).forEach(function(el,i){
+
+            var windowYOffset = window.pageYOffset,
+                elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+
+            el.style.backgroundPosition = elBackgrounPos;
+
+        });
+    };
 });
