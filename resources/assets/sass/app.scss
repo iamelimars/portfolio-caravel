@@ -27,6 +27,40 @@ html, body {
 
 }
 
+body {
+  //cursor: url({{ URL::asset('img/circle.png') }}), auto;
+  //cursor: wait;
+}
+nav {
+  box-shadow: none;
+}
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.side-nav {
+  div {
+    border-color: white;
+  }
+
+    li>a {
+      text-align: center;
+    }
+
+}
+.side-nav li>a {
+  text-align: center;
+  i {
+    align-self: center;
+  }
+}
+.side-nav li>a:hover {
+  background-color: white;
+  text-decoration: none;
+
+}
+
 //.wow { visibility: hidden; }
 .section {
   min-height: 100%;
@@ -46,6 +80,18 @@ a {
     margin-right: 20px;
     font-size: 20px !important;
   }
+}
+
+a:hover {
+  color: $gold !important;
+
+}
+a:active {
+  color: $light-gold !important;
+}
+.fa-times:hover {
+  color: $gold !important;
+
 }
 
 .menu-btn {
@@ -170,11 +216,15 @@ a {
 }
 #works {
   img {
-    -webkit-transition: box-shadow 0.7s; /* Safari 3.1 to 6.0 */
-    transition: box-shadow 0.7s;
+    //-webkit-transition: box-shadow 0.7s; /* Safari 3.1 to 6.0 */
+    //transition: box-shadow 0.7s;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition:         transform .5s ease-in-out;
   }
   img:hover {
-    box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.2);
+    //box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
   }
   h4 {
     font-size: 13px;

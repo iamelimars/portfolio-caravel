@@ -1,17 +1,18 @@
 @extends('layouts.app')
 
+
+@section('sidenav-content')
+    <li><a id="service-btn">Services</a></li>
+    <li><a id="skills-btn">Skills</a></li>
+    <li><a id="pricing-btn">Pricing</a></li>
+    <li><a id="works-btn">Works</a></li>
+    <li><a id="quote-btn">Quote</a></li>
+    <li><a id="contact-btn">Contact</a></li>
+    <li class="text-center"><i class="fa fa-circle-o " aria-hidden="true"></i></li>
+@endsection
+
 @section('content')
-    <ul id="slide-out" class="side-nav">
-        <div class="">
-            <li><a id="service-btn">Services</a></li>
-            <li><a id="skills-btn">Skills</a></li>
-            <li><a id="pricing-btn">Pricing</a></li>
-            <li><a id="works-btn">Works</a></li>
-            <li><a id="quote-btn">Quote</a></li>
-            <li><a id="contact-btn">Contact</a></li>
-            <li><div class="divider"></div></li>
-        </div>
-    </ul>
+
 
 
     <a class="menu menu-btn wow fadeIn" data-activates="slide-out" data-wow-duration="2s" data-wow-delay="0.7s">
