@@ -42,7 +42,7 @@
     <div id="loader">
         <div id="loading_line"></div>
 
-        <h1 id="loading-percent">loading</h1>
+        {{--<h1 id="loading-percent">loading</h1>--}}
 
         <div class="loader">
             <div class="loader__figure"></div>

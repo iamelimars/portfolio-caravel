@@ -77,12 +77,14 @@ nav {
 }
 
 .side-nav {
+  background: black;
   div {
     border-color: white;
   }
 
     li>a {
       text-align: center;
+      color: $light-gold;
     }
 
 }
@@ -90,10 +92,12 @@ nav {
   text-align: center;
   i {
     align-self: center;
+    color: $gold;
   }
 }
 .side-nav li>a:hover {
-  background-color: white;
+  background-color: $gold;
+  color: black !important;
   text-decoration: none;
 
 }

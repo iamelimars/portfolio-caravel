@@ -8398,12 +8398,17 @@ nav {
   border-color: transparent;
 }
 
+.side-nav {
+  background: black;
+}
+
 .side-nav div {
   border-color: white;
 }
 
 .side-nav li > a {
   text-align: center;
+  color: #f0debc;
 }
 
 .side-nav li > a {
@@ -8413,10 +8418,12 @@ nav {
 .side-nav li > a i {
   -ms-flex-item-align: center;
       align-self: center;
+  color: #ebca9d;
 }
 
 .side-nav li > a:hover {
-  background-color: white;
+  background-color: #ebca9d;
+  color: black !important;
   text-decoration: none;
 }
 
