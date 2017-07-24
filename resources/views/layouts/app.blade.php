@@ -38,6 +38,19 @@
 
 </head>
 <body style="cursor: url('{{ asset('img/grey-circle.png') }}'), auto;">
+
+    <div id="loader">
+        <div id="loading_line"></div>
+
+        <h1 id="loading-percent">loading</h1>
+
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label" id="loader__label">A7G</p>
+        </div>
+
+    </div>
+
     <div id="app">
         <ul id="slide-out" class="side-nav">
             <div class="">

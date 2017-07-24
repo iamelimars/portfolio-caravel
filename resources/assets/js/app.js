@@ -25,6 +25,37 @@ require('jquery.scrollto');
 //     el: '#app'
 // });
 
+// window.addEventListener("load", function() {
+//    var loadScreen = document.getElementById("loader");
+//    document.body.removeChild(loadScreen);
+// });
+
+$(window).on('load', function() {
+    console.log('loaded');
+   //
+    $('#loading_line').animate({
+        width: '100%',
+    }, {
+        easing: 'linear',
+        duration: 6000,
+        step: function(now) {
+
+            var onepercent = $(window).width / 100 * 1;
+            var data = now / onepercent;
+
+
+
+
+            datatwo = data.toFixed(0);
+            datapos = (Math.abs(datatwo));
+            console.log(Math.round(now * 100) / 100 + '%');
+
+            $('#loader__label').html(Math.round((now * 100) / 100) + '%');
+            $('#loader').delay(6500).fadeOut('slow');
+        }
+    });
+
+});
 
 $(document).ready(function(){
     var wow = new WOW(
