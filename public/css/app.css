@@ -8393,20 +8393,29 @@ svg {
 }
 
 video {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   min-width: 100%;
   min-height: 100%;
+  width: auto;
+  height: auto;
   z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(0%);
-          transform: translateX(-50%) translateY(0%);
-  background: center center;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background: cover center center;
   -webkit-transition: 1s opacity;
   transition: 1s opacity;
   -webkit-filter: invert(100%);
   /* Safari */
   filter: invert(100%);
+}
+
+.video-background {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
 }
 
 nav {
@@ -8668,8 +8677,8 @@ a:active {
 
 #hero {
   /* margin-top: -20px; */
-  position: absolute;
-  height: 120%;
+  position: relative;
+  height: 120vh !important;
   min-width: 100%;
   top: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 252, 252, 0)), to(#fcfcfc)) no-repeat bottom;
@@ -8678,8 +8687,10 @@ a:active {
 
 #hero h3 {
   color: #ebca9d;
-  top: 30%;
-  position: relative;
+  top: 40vh;
+  width: 100vw;
+  height: 100% !important;
+  position: absolute;
   text-align: center;
   /* font-family: 'Poiret One', cursive; */
   font-family: 'Yellowtail', cursive;
