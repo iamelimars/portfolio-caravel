@@ -11078,7 +11078,7 @@ $(window).on('load', function () {
         width: '100%'
     }, {
         easing: 'linear',
-        duration: 6000,
+        duration: 2000,
         step: function step(now) {
 
             var onepercent = $(window).width / 100 * 1;
@@ -11089,7 +11089,7 @@ $(window).on('load', function () {
             console.log(Math.round(now * 100) / 100 + '%');
 
             $('#loader__label').html(Math.round(now * 100 / 100) + '%');
-            $('#loader').delay(6500).fadeOut('slow');
+            $('#loader').delay(2500).fadeOut('fast');
         }
     });
 });

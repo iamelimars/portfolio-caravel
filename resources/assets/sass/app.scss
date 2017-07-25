@@ -23,10 +23,15 @@ $tan: rgb(245,241,241);
 
 
 html, body {
-  height: 100%;
+  min-height: 100%;
   font-family: 'Raleway', sans-serif;
-  background: white;
+  // background: grey;
+  
 
+}
+body {
+  background: linear-gradient(to bottom, rgb(252, 252, 252) 20%, black) 
+      no-repeat bottom;
 }
 
 #loader {
@@ -64,10 +69,35 @@ svg {
 
 
 
-body {
-  //cursor: url({{ URL::asset('img/circle.png') }}), auto;
-  //cursor: wait;
+video { 
+  position: relative;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  // width: auto;
+  // height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(0%);
+//  background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  // background-size: cover;
+  background: center center;
+  transition: 1s opacity;
+  -webkit-filter: invert(100%); /* Safari */
+    filter: invert(100%);
+    
 }
+
+// .video-background {
+//   display: hidden;
+//   background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%);
+// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(95%,rgba(255,255,255,1)));
+// background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%);
+// background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%);
+// background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%);
+// background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%);
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+// }
 nav {
   box-shadow: none;
 }
@@ -291,12 +321,16 @@ a:active {
   /* margin-top: -20px; */
   //background: url('../images/glasses.jpeg') center;
   //background-size: cover;
-  height: 100%;
+  position: absolute;
+  height: 120%;
+  min-width: 100%;
   top: 0;
-  /* background-attachment: fixed; */
+  background: linear-gradient(to bottom, rgba(252, 252, 252, 0), rgb(252, 252, 252) ) 
+      no-repeat bottom;
+
   h3 {
     color: $gold;
-    top: 45%;
+    top: 30%;
     position: relative;
     text-align: center;
     /* font-family: 'Poiret One', cursive; */

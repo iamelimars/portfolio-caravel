@@ -8354,9 +8354,13 @@ button.close {
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
   font-family: 'Raleway', sans-serif;
-  background: white;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #fcfcfc), to(black)) no-repeat bottom;
+  background: linear-gradient(to bottom, #fcfcfc 20%, black) no-repeat bottom;
 }
 
 #loader {
@@ -8386,6 +8390,23 @@ svg {
   position: fixed;
   font-size: 20vw;
   color: rgba(255, 255, 255, 0.2);
+}
+
+video {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(0%);
+          transform: translateX(-50%) translateY(0%);
+  background: center center;
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity;
+  -webkit-filter: invert(100%);
+  /* Safari */
+  filter: invert(100%);
 }
 
 nav {
@@ -8647,14 +8668,17 @@ a:active {
 
 #hero {
   /* margin-top: -20px; */
-  height: 100%;
+  position: absolute;
+  height: 120%;
+  min-width: 100%;
   top: 0;
-  /* background-attachment: fixed; */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 252, 252, 0)), to(#fcfcfc)) no-repeat bottom;
+  background: linear-gradient(to bottom, rgba(252, 252, 252, 0), #fcfcfc) no-repeat bottom;
 }
 
 #hero h3 {
   color: #ebca9d;
-  top: 45%;
+  top: 30%;
   position: relative;
   text-align: center;
   /* font-family: 'Poiret One', cursive; */

@@ -20,13 +20,24 @@
         <div></div>
         <div></div>
     </a>
+    <div class="video-background">
+        <video  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+        <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+        <!--<source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">-->
+        <source src="https://s3.us-east-2.amazonaws.com/iamelimars/Sparks.mp4" type="video/mp4">
+    </video>
+    </div>
+    
 
-    <div id="hero" class="parallax section">
-        <h3 id="hero-title" class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">Iamelimars</h3>
+
+
+    <div id="hero" class="section">
+    
+        <h3 id="hero-title" class="wow fadeInUp" data-wow-duration="3s" data-wow-delay="3.5s">Iamelimars</h3>
     </div>
 
     <!-- <div id="fullpage"> -->
-    <div class="section white" id="services">
+    <div class="section " id="services">
         <div class="container content">
             <h1>Services</h1>
             <div class="col-xs-12 wow fadeIn " data-wow-duration="2s" data-wow-delay="0.5s">
@@ -52,7 +63,7 @@
             </div>
         </div>
     </div>
-    <div class="section tan" id="skills">
+    <div class="section" id="skills">
         <div class="container content">
             <h1>Skills</h1>
 
@@ -114,7 +125,7 @@
             </div>
         </div>
     </div>
-    <div class="section white" id="pricing">
+    <div class="section " id="pricing">
         <div class="container content">
             <h1>Pricing</h1>
             <div class="col-xs-12 wow fadeIn " data-wow-duration="2s" data-wow-delay="0.3s">
@@ -124,7 +135,7 @@
             </div>
         </div>
     </div>
-    <div class="section tan" id="works">
+    <div class="section " id="works">
         <div class="container content">
             <h1>Works</h1>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeIn thumb" data-wow-duration="2s" data-wow-delay="0.3s">
@@ -165,7 +176,7 @@
             </div>
         </div>
     </div>
-    <div class="section white" id="quote">
+    <div class="section " id="quote">
         <div class="container content">
             <h1>Quote</h1>
             <div class="col-xs-12 wow fadeIn " data-wow-duration="2s" data-wow-delay="0.3s">
@@ -175,7 +186,7 @@
             </div>
         </div>
     </div>
-    <div class="section tan" id="contact">
+    <div class="section " id="contact">
         <div class="container content">
             <h1>Contact</h1>
             <div class="row">
