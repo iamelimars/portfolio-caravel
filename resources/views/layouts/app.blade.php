@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('pageTitle')</title>
 
     <!-- Styles -->
     <link rel="stylesheet"
@@ -46,10 +46,16 @@
 
         <div class="loader">
             <div class="loader__figure"></div>
-            <p class="loader__label" id="loader__label">A7G</p>
+            <p class="loader__label" id="loader__label">Loading...</p>
         </div>
 
     </div>
+
+    <a class="menu menu-btn wow fadeIn" data-activates="slide-out" data-wow-duration="2s" data-wow-delay="0.7s">
+        <div></div>
+        <div></div>
+        <div></div>
+    </a>
 
     <div id="app">
         <ul id="slide-out" class="side-nav">

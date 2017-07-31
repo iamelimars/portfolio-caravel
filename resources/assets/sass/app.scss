@@ -30,13 +30,13 @@ html, body {
 
 }
 body {
-  background: linear-gradient(to bottom, rgb(252, 252, 252) 20%, black) 
+  background: linear-gradient(to bottom, rgb(252, 252, 252) 20%, black)
       no-repeat bottom;
 }
 
 #loader {
   z-index: 1000;
-  background: black;
+  background: white;
   height: 100%;
   width: 100%;
   //margin-top: -22px;

@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+@section('pageTitle', 'Iamelimars')
 
 @section('sidenav-content')
     <li><a id="service-btn">Services</a></li>
@@ -15,13 +16,13 @@
 
 
 
-    <a class="menu menu-btn wow fadeIn" data-activates="slide-out" data-wow-duration="2s" data-wow-delay="0.7s">
-        <div></div>
-        <div></div>
-        <div></div>
-    </a>
+    {{--<a class="menu menu-btn wow fadeIn" data-activates="slide-out" data-wow-duration="2s" data-wow-delay="0.7s">--}}
+        {{--<div></div>--}}
+        {{--<div></div>--}}
+        {{--<div></div>--}}
+    {{--</a>--}}
     <div class="video-background">
-        <video class="" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+        <video class="" poster="" id="bgvid" playsinline autoplay muted loop>
        
         <source src="https://s3.us-east-2.amazonaws.com/iamelimars/Sparks.mp4" type="video/mp4">
     </video>
