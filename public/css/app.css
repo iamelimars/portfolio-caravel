@@ -8359,8 +8359,12 @@ body {
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #fcfcfc), to(black)) no-repeat bottom;
-  background: linear-gradient(to bottom, #fcfcfc 20%, black) no-repeat bottom;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #fcfcfc), to(white)) no-repeat bottom;
+  background: linear-gradient(to bottom, #fcfcfc 20%, white) no-repeat bottom;
+}
+
+body .white-background {
+  background: white;
 }
 
 #loader {
@@ -8439,6 +8443,7 @@ nav {
 .side-nav li > a {
   text-align: center;
   color: #f0debc;
+  font-size: 1.7rem;
 }
 
 .side-nav li > a {
@@ -8455,6 +8460,8 @@ nav {
   background-color: #ebca9d;
   color: black !important;
   text-decoration: none;
+  -webkit-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
 
 .section {

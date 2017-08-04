@@ -30,7 +30,10 @@ html, body {
 
 }
 body {
-  background: linear-gradient(to bottom, rgb(252, 252, 252) 20%, black)
+  .white-background {
+    background: white;
+  }
+  background: linear-gradient(to bottom, rgb(252, 252, 252) 20%, white)
       no-repeat bottom;
 }
 
@@ -119,6 +122,7 @@ nav {
     li>a {
       text-align: center;
       color: $light-gold;
+      font-size: 1.7rem;
     }
 
 }
@@ -133,6 +137,9 @@ nav {
   background-color: $gold;
   color: black !important;
   text-decoration: none;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 
 }
 

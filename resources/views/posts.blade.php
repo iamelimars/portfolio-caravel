@@ -9,23 +9,29 @@
     <li><a id="works-btn">Works</a></li>
     <li><a id="quote-btn">Quote</a></li>
     <li><a id="contact-btn">Contact</a></li>
+    <li><a href="{{ route('posts') }}">Blog</a></li>
     <li class="text-center"><i class="fa fa-circle-o " aria-hidden="true"></i></li>
 @endsection
 
 @section('content')
-<div class="container">
+<div class="container white-background">
     @foreach($posts as $post)
+        <div class="col-md-6">
+            <h2>{{ $post->title }}</h2>
 
-        <h2>{{ $post->title }}</h2>
+            <h4>{{ $post->excerpt }}</h4>
 
-        <h4>{{ $post->excerpt }}</h4>
+            {!! $post->body !!}
 
-        {!! $post->body !!}
+            {{--<img src="{{ $post->image }}" alt="{{ $post->title }}">--}}
+        </div>
 
-        <img src="{{ $post->image }}" alt="{{ $post->title }}">
+
 
     @endforeach
+
 </div>
+{{ $posts->links() }}
 
 
 @endsection

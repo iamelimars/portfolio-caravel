@@ -22,11 +22,11 @@
     <style>
 
         a:hover {
-            cursor: url('{{ asset('img/circle.png') }}'), auto;
+            cursor: url('{{ asset('img/grey-circle.png') }}'), auto;
 
         }
         a:active {
-            cursor: url('{{ asset('img/grey-circle.png') }}'), auto;
+            cursor: url('{{ asset('img/black-circle.png') }}'), auto;
         }
 
 
@@ -37,7 +37,7 @@
     <script src="{{ asset('js/app.js') }}"></script>
 
 </head>
-<body style="cursor: url('{{ asset('img/grey-circle.png') }}'), auto;">
+<body style="cursor: url('{{ asset('img/gold-circle.png') }}'), auto;">
 
     <div id="loader">
         <div id="loading_line"></div>
@@ -68,27 +68,30 @@
                 <!-- Authentication Links -->
                 @if (Auth::guest())
                     <li><a href="{{ route('login') }}">Login</a></li>
-                    {{--<li><a href="{{ route('register') }}">Register</a></li>--}}
+                    <li><a href="{{ route('register') }}">Register</a></li>
                 @else
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            {{ Auth::user()->name }} <span class="caret"></span>
+                    <li><a href="">{{ Auth::user()->name }}</a> </li>
+                    {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">--}}
+                        {{--{{ Auth::user()->name }} <span class="caret"></span>--}}
+                    {{--</a>--}}
+                    <li>
+                        <a href="{{ route('logout') }}"
+                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                            Logout
                         </a>
 
-                        <ul class="dropdown-menu" role="menu">
-                            <li>
-                                <a href="{{ route('logout') }}"
-                                   onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                    Logout
-                                </a>
-
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    {{ csrf_field() }}
-                                </form>
-                            </li>
-                        </ul>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
                     </li>
+                    {{--<li class="dropdown">--}}
+                        {{----}}
+
+                        {{--<ul class="dropdown-menu" role="menu">--}}
+                            {{----}}
+                        {{--</ul>--}}
+                    {{--</li>--}}
                 @endif
 
             </div>
@@ -155,6 +158,7 @@
 
     <!-- Scripts -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+    <script src="{{ asset('js/animatescroll.min.js') }}"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
     <script src="{{ asset('js/custom.js') }}"></script>

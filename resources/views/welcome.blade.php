@@ -9,11 +9,13 @@
     <li><a id="works-btn">Works</a></li>
     <li><a id="quote-btn">Quote</a></li>
     <li><a id="contact-btn">Contact</a></li>
+    <li><a href="{{ route('posts') }}">Blog</a></li>
+    <li><a href="{{ route('tutorials') }}">Tutorials</a></li>
     <li class="text-center"><i class="fa fa-circle-o " aria-hidden="true"></i></li>
 @endsection
 
 @section('content')
-
+<div id="welcome-body">
 
 
     {{--<a class="menu menu-btn wow fadeIn" data-activates="slide-out" data-wow-duration="2s" data-wow-delay="0.7s">--}}
@@ -140,37 +142,37 @@
             <h1>Works</h1>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeIn thumb" data-wow-duration="2s" data-wow-delay="0.3s">
                 <a class="" href="https://itunes.apple.com/us/app/versify-free-daily-bible-verses/id1160046953?mt=8" target="_blank">
-                    <img class="img-responsive" src="http://via.placeholder.com/350x250" alt="">
+                    <img class="img-responsive" src="https://s3.us-east-2.amazonaws.com/iamelimars/Versify.jpg" alt="Versify">
                 </a>
                 <h4>Versify</h4>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeIn thumb" data-wow-duration="2s" data-wow-delay="0.6s">
                 <a class="" href="https://itunes.apple.com/US/app/id1169140387?mt=8" target="_blank">
-                    <img class="img-responsive" src="http://via.placeholder.com/350x250" alt="">
+                    <img class="img-responsive" src="https://s3.us-east-2.amazonaws.com/iamelimars/kouleur.jpg" alt="Kouleur">
                 </a>
                 <h4>Kouleur</h4>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeIn thumb" data-wow-duration="2s" data-wow-delay="0.9s">
                 <a class="" href="https://itunes.apple.com/us/app/parallax-weather/id1150730858?mt=8" target="_blank">
-                    <img class="img-responsive" src="http://via.placeholder.com/350x250" alt="">
+                    <img class="img-responsive" src="https://s3.us-east-2.amazonaws.com/iamelimars/parallax.jpg" alt="">
                 </a>
                 <h4>Parallax Weather</h4>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeIn thumb" data-wow-duration="2s" data-wow-delay="0.9s">
                 <a class="" href="http://aetwayalmeen.com" target="_blank">
-                    <img class="img-responsive" src="http://via.placeholder.com/350x250" alt="">
+                    <img class="img-responsive" src="https://s3.us-east-2.amazonaws.com/iamelimars/aetwayalmeen.jpg" alt="Aetwa Yalmeen">
                 </a>
                 <h4>AetwaYalmeen.com</h4>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeIn thumb" data-wow-duration="2s" data-wow-delay="0.6s">
                 <a class="" href="http://angelofloveboutique.com" target="_blank">
-                    <img class="img-responsive" src="http://via.placeholder.com/350x250" alt="">
+                    <img class="img-responsive" src="https://s3.us-east-2.amazonaws.com/iamelimars/angeloflove.jpg" alt="Angel of Love Boutique">
                 </a>
                 <h4>AngelOfLoveBoutique.com</h4>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeIn thumb" data-wow-duration="2s" data-wow-delay="0.3s">
                 <a class="" href="http://buildinghand.io/portfolio.php" target="_blank">
-                    <img class="img-responsive" src="http://via.placeholder.com/350x250" alt="">
+                    <img class="img-responsive" src="https://s3.us-east-2.amazonaws.com/iamelimars/BuildingHand.jpg" alt="Building Hand">
                 </a>
                 <h4>BuildingHand.io</h4>
             </div>
@@ -227,6 +229,7 @@
             </div>
         </div>
     </div>
+</div>
 @endsection
 
 
