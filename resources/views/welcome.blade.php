@@ -23,19 +23,21 @@
         {{--<div></div>--}}
         {{--<div></div>--}}
     {{--</a>--}}
-    <div class="video-background">
+    {{-- <div class="video-background">
         <video class="" poster="" id="bgvid" playsinline autoplay muted loop>
        
         <source src="https://s3.us-east-2.amazonaws.com/iamelimars/Sparks.mp4" type="video/mp4">
     </video>
-    </div>
+    </div> --}}
     
 
 
 
     <div id="hero" class="section">
-    
-        <h3 id="hero-title" class="wow fadeInUp" data-wow-duration="3s" data-wow-delay="3.5s">Iamelimarss</h3>
+        <div id="title-circle">
+            <h3 id="hero-title" class="wow fadeInUp" data-wow-duration="3s" data-wow-delay="1.5s">ELI MARSHALL</h3>
+        </div>
+        
     </div>
 
     <!-- <div id="fullpage"> -->

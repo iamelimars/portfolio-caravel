@@ -38,7 +38,7 @@
 
 </head>
 <body style="cursor: url('{{ asset('img/gold-circle.png') }}'), auto;">
-
+{{-- <body> --}}
     <div id="loader">
         <div id="loading_line"></div>
 
@@ -162,6 +162,11 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.min.js"></script>
+    <script src="{{ asset('js/renderers/Projector.js') }}"></script>
+    <script src="{{ asset('js/renderers/CanvasRenderer.js') }}"></script>
+    <script src="{{ asset('js/libs/stats.min.js') }}"></script>
+
 
 </body>
 </html>
