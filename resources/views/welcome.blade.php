@@ -35,7 +35,7 @@
 
     <div id="hero" class="section">
     
-        <h3 id="hero-title" class="wow fadeInUp" data-wow-duration="3s" data-wow-delay="3.5s">Iamelimars</h3>
+        <h3 id="hero-title" class="wow fadeInUp" data-wow-duration="3s" data-wow-delay="3.5s">Iamelimarss</h3>
     </div>
 
     <!-- <div id="fullpage"> -->
