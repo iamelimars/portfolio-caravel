@@ -26,7 +26,7 @@ html, body {
   min-height: 100%;
   font-family: 'Raleway', sans-serif;
   // background: grey;
-  
+
 
 }
 body {
@@ -72,7 +72,7 @@ svg {
 
 
 
-video { 
+video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -88,7 +88,7 @@ video {
   transition: 1s opacity;
   -webkit-filter: invert(100%); /* Safari */
     filter: invert(100%);
-    
+
 }
 
 .video-background {
@@ -337,7 +337,7 @@ a:active {
   height: 120vh !important;
   min-width: 100%;
   top: 0;
-  background: linear-gradient(to bottom, rgba(252, 252, 252, 0), rgb(252, 252, 252) ) 
+  background: linear-gradient(to bottom, rgba(252, 252, 252, 0), rgb(252, 252, 252) )
       no-repeat bottom;
 
   padding: 0;
@@ -345,9 +345,9 @@ a:active {
   #title-circle {
     height: 300px;
     width: 300px;
-    // background-color: rgba(255,255,255,0.8);
+    background-color: rgba(0,0,0,0.8);
     // backdrop-filter: blur(5px) hue-rotate(200deg);
-    backdrop-filter: invert(15%) blur(2px);
+    // backdrop-filter: invert(15%) blur(2px);
     // backdrop-filter: hue-rotate(200deg);
     position: absolute;
     top: calc(50vh - 150px);
@@ -356,15 +356,16 @@ a:active {
   }
 
   h3 {
-    // color: $gold;
-    color: white;
+    color: $gold;
+    font-weight: 100;
+    // color: white;
     // top: 40vh;
     // width: 100vw;
     // height: 100% !important;
     // position: absolute;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    // font-family: 'Poiret One', cursive; 
+    // font-family: 'Poiret One', cursive;
     // font-family: 'Yellowtail', cursive;
     font-size: 30px;
     margin-top: 130px;
@@ -691,5 +692,3 @@ a:active {
     border-radius: 3px;
     background: grey;
   }
-
-
