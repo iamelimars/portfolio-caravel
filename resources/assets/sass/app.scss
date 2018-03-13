@@ -299,15 +299,15 @@ a:active {
 }
 #works {
   img {
-    //-webkit-transition: box-shadow 0.7s; /* Safari 3.1 to 6.0 */
-    //transition: box-shadow 0.7s;
-    -webkit-transition: -webkit-transform .5s ease-in-out;
-    transition:         transform .5s ease-in-out;
+    -webkit-transition: box-shadow 0.3s; /* Safari 3.1 to 6.0 */
+    transition: box-shadow 0.3s;
+    // -webkit-transition: -webkit-transform .5s ease-in-out;
+    // transition:         transform .5s ease-in-out;
   }
   img:hover {
-    //box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.2);
-    -webkit-transform: rotate(2deg);
-    transform: rotate(2deg);
+    box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.2);
+    // -webkit-transform: rotate(2deg);
+    // transform: rotate(2deg);
   }
   h4 {
     font-size: 13px;
@@ -345,7 +345,8 @@ a:active {
   #title-circle {
     height: 300px;
     width: 300px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(255,255,255,1);
+    // background-color: rgba(0,0,0,0.8);
     // backdrop-filter: blur(5px) hue-rotate(200deg);
     // backdrop-filter: invert(15%) blur(2px);
     // backdrop-filter: hue-rotate(200deg);
@@ -353,6 +354,9 @@ a:active {
     top: calc(50vh - 150px);
     left: calc(50vw - 150px);
     border-radius: 150px;
+    -webkit-box-shadow: 0px 0px 65px 6px rgba(235,202,157,0.75);
+    -moz-box-shadow: 0px 0px 65px 6px rgba(235,202,157,0.75);
+    box-shadow: 0px 0px 65px 6px rgba(235,202,157,0.75);
   }
 
   h3 {
@@ -367,8 +371,14 @@ a:active {
     font-family: 'Raleway', sans-serif;
     // font-family: 'Poiret One', cursive;
     // font-family: 'Yellowtail', cursive;
-    font-size: 30px;
-    margin-top: 130px;
+    font-size: 23px;
+    margin-top: 110px;
+  }
+  h4 {
+    color: lightgray;
+    font-weight: 100;
+    margin-top: 19px;
+    font-size: 15px;
   }
 }
 
@@ -686,9 +696,9 @@ a:active {
   }
 }
 
-.trail { /* className for the trail elements */
-    position: absolute;
-    height: 6px; width: 6px;
-    border-radius: 3px;
-    background: grey;
-  }
+// .trail { /* className for the trail elements */
+//     position: absolute;
+//     height: 6px; width: 6px;
+//     border-radius: 3px;
+//     background: grey;
+//   }

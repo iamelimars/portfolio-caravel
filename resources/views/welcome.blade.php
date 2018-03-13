@@ -25,19 +25,20 @@
     {{--</a>--}}
     {{-- <div class="video-background">
         <video class="" poster="" id="bgvid" playsinline autoplay muted loop>
-       
+
         <source src="https://s3.us-east-2.amazonaws.com/iamelimars/Sparks.mp4" type="video/mp4">
     </video>
     </div> --}}
-    
+
 
 
 
     <div id="hero" class="section">
         <div id="title-circle">
             <h3 id="hero-title" class="wow fadeInUp" data-wow-duration="3s" data-wow-delay="1.5s">ELI MARSHALL</h3>
+            <h4 class="text-center"> Web Designer <br> & <br> Developer </h4>
         </div>
-        
+
     </div>
 
     <!-- <div id="fullpage"> -->
@@ -177,6 +178,12 @@
                     <img class="img-responsive" src="https://s3.us-east-2.amazonaws.com/iamelimars/BuildingHand.jpg" alt="Building Hand">
                 </a>
                 <h4>BuildingHand.io</h4>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeIn thumb" data-wow-duration="2s" data-wow-delay="0.3s">
+                <a class="" href="http://templateone.iamelimars.com/" target="_blank">
+                    <img class="img-responsive" src="https://s3.us-east-2.amazonaws.com/iamelimars/portfolio_screenshot1.png" alt="Email Template">
+                </a>
+                <h4>Email Template</h4>
             </div>
         </div>
     </div>
